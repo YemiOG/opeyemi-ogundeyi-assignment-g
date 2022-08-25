@@ -1,0 +1,27 @@
+[
+  {
+    "username": "@declan_23",
+    "age": 23,
+    "country": "Nigeria"
+  },
+  {
+    "username": "@yemi_og",
+    "age": 27,
+    "country": "Nigeria"
+  },
+  {
+    "username": "@cr7",
+    "age": 37,
+    "country": "Portugal"
+  },
+  {
+    "username": "@daenarys",
+    "age": 0,
+    "country": "Valyria"
+  },
+  {
+    "username": "@jonsnow",
+    "age": 48,
+    "country": "Winterfell"
+  }
+]

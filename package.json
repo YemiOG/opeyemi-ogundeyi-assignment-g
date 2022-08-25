@@ -1,0 +1,15 @@
+{
+  "name": "opeyemi-ogundeyi-assignmentg",
+  "version": "1.0.0",
+  "description": "Altschool Africa School of Engineering Assignmwnt(NodeJs)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "author": "Opeyemi Ogundeyi",
+  "license": "ISC",
+  "dependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
