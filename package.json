@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Altschool Africa School of Engineering Assignmwnt(NodeJs)",
   "main": "index.js",
+  "type": "module",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "nodemon server.js"
+    "start": "nodemon index.js"
   },
   "author": "Opeyemi Ogundeyi",
   "license": "ISC",
