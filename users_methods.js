@@ -7,7 +7,7 @@ let usersDB = [];
 //get all users - GET request
 
 const getAllUsers = function (req, res) {
-  fs.readFile(usersDBPath 'utf8', (err, users)=>{
+  fs.readFile(usersDBPath, "utf8", (err, users) => {
     if (err) {
       console.log(err);
       res.writeHead(404);
@@ -51,4 +51,4 @@ const addUser = function (req, res) {
   });
 };
 
-export { addUser };
+export { addUser, getAllUsers };

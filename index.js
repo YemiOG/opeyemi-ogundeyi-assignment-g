@@ -1,7 +1,13 @@
 import { createServer } from "http";
 import { readFileSync } from "fs";
 import { join } from "path";
-import { updateBook, getAllbooks, addBook, deleteBook } from "./books_methods";
+import {
+  updateBook,
+  getAllbooks,
+  addBook,
+  deleteBook,
+} from "./books_methods.js";
+import { getAllUsers, addUser } from "./users_methods.js";
 
 const booksDBPath = join(__dirname, "db", "books.json");
 let booksDB = [];
@@ -12,7 +18,6 @@ const PORT = 8000;
 const requestListener = async function (req, res) {
   res.setHeader("Content-Type, application/json");
 
-  //books
   if (req.url === "/books" && req.method === "GET") {
     getAllbooks(req, res);
   } else if (req.url === "/books" && req.method === "POST") {
@@ -21,6 +26,10 @@ const requestListener = async function (req, res) {
     updateBook(req, res);
   } else if (req.url.startsWith("/books") && req.method === "DELETE") {
     deleteBook(req, res);
+  } else if (req.url === "/users" && req.method === "POST") {
+    addUser(req, res);
+  } else if (req.url === "/users" && req.method === "GET") {
+    getAllUsers;
   } else {
     res.writeHead(400);
     res.end(JSON.stringify({ message: "Method not Supported" }));
